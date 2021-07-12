@@ -296,6 +296,18 @@
                      isLocalOnly="false"
                      name="ClientConfig"
                      ordinal="2"></PropertyDefinition>
+                    <PropertyDefinition
+                     aspect.cacheTime="-1.0"
+                     aspect.dataChangeType="VALUE"
+                     aspect.isLogged="true"
+                     aspect.isPersistent="true"
+                     aspect.isRemote="true"
+                     baseType="XML"
+                     category=""
+                     description=""
+                     isLocalOnly="false"
+                     name="LogConfig"
+                     ordinal="3"></PropertyDefinition>
                 </PropertyDefinitions>
                 <ServiceDefinitions></ServiceDefinitions>
                 <EventDefinitions>
@@ -385,6 +397,16 @@
                  pushType="VALUE"
                  sourceName=""
                  timeout="0"></RemotePropertyBinding>
+                <RemotePropertyBinding
+                 aspect.source=""
+                 aspect.startType="useDefaultValue"
+                 aspect.tagAddress=""
+                 foldType="NONE"
+                 name="LogConfig"
+                 pushThreshold="0.0"
+                 pushType="VALUE"
+                 sourceName="LogConfig"
+                 timeout="0"></RemotePropertyBinding>
             </RemotePropertyBindings>
             <RemoteServiceBindings></RemoteServiceBindings>
             <RemoteEventBindings>
@@ -395,43 +417,160 @@
             <AlertConfigurations>
                 <AlertDefinitions
                  name="ClientConfig"></AlertDefinitions>
+                <AlertDefinitions
+                 name="LogConfig"></AlertDefinitions>
             </AlertConfigurations>
             <ImplementedShapes></ImplementedShapes>
             <ThingProperties>
                 <reportingLastEvaluation>
-                    <Value>2021-07-12T06:50:04.457Z</Value>
-                    <Timestamp>2021-07-12T06:50:04.457Z</Timestamp>
+                    <Value>2021-07-12T07:30:30.420Z</Value>
+                    <Timestamp>2021-07-12T07:30:30.420Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </reportingLastEvaluation>
                 <reportingLastChange>
-                    <Value>2021-07-12T06:50:04.457Z</Value>
-                    <Timestamp>2021-07-12T06:50:04.457Z</Timestamp>
+                    <Value>2021-07-12T07:30:30.420Z</Value>
+                    <Timestamp>2021-07-12T07:30:30.420Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </reportingLastChange>
                 <lastConnection>
-                    <Value>2021-07-12T06:50:04.456Z</Value>
-                    <Timestamp>2021-07-12T06:50:04.456Z</Timestamp>
+                    <Value>2021-07-12T07:30:30.420Z</Value>
+                    <Timestamp>2021-07-12T07:30:30.420Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </lastConnection>
                 <ClientConfig>
                     <Value>
-                        <WcfConfiguration
-                         isDebugEnabled="true">
-                            <endPoints>
-                                <endPoint
-                                 autoReconnectTimeout="00:00:30"
-                                 isAutoReconnectSupported="True"
-                                 maximumRetry="2"
-                                 name="PrintEngineClient"
-                                 uri="net.tcp://localhost:9041/PrintEngineService"></endPoint>
-                                <!-- This is currently deactivated because it's no need to configure this elements after initial operation. If this values would be changed accidentally it can be worsen the print quality. US #2613 "Voreilung aus UI entfernen"
-    <endPoint name="WebTrackRollerClient" uri="net.tcp://localhost:9026/WebTrackRollerService" />-->
-                            </endPoints>
-                        </WcfConfiguration>
+                        <loggingConfiguration
+                         defaultCategory="General"
+                         name=""
+                         tracingEnabled="false">
+                            <listeners>
+                                <add
+                                 formatter="Text Formatter"
+                                 listenerDataType="Microsoft.Practices.EnterpriseLibrary.Logging.Configuration.CustomTraceListenerData, Microsoft.Practices.EnterpriseLibrary.Logging"
+                                 name="MemoryTraceListener"
+                                 type="Printer.Infrastructure.Logging.MemoryTraceListener, Printer.Infrastructure"></add>
+                                <add
+                                 fileName="%ProgramData%/Palis/Palis_ThingWorxAgent/logs/trace.log"
+                                 footer=""
+                                 formatter="Text Formatter"
+                                 header=""
+                                 listenerDataType="Microsoft.Practices.EnterpriseLibrary.Logging.Configuration.RollingFlatFileTraceListenerData, Microsoft.Practices.EnterpriseLibrary.Logging"
+                                 name="Rolling Flat File Trace Listener"
+                                 rollFileExistsBehavior="Increment"
+                                 rollInterval="Day"
+                                 rollSizeKB="10240"
+                                 type="Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.RollingFlatFileTraceListener, Microsoft.Practices.EnterpriseLibrary.Logging"></add>
+                            </listeners>
+                            <formatters>
+                                <add
+                                 name="Text Formatter"
+                                 template="{timestamp(local)}|{severity}|{property(ActivityId)}|{dictionary({value})}|{message}"
+                                 type="Microsoft.Practices.EnterpriseLibrary.Logging.Formatters.TextFormatter, Microsoft.Practices.EnterpriseLibrary.Logging"></add>
+                            </formatters>
+                            <specialSources>
+                                <allEvents
+                                 name="All Events"
+                                 switchValue="All">
+                                    <listeners>
+                                        <add
+                                         name="Rolling Flat File Trace Listener"></add>
+                                        <add
+                                         name="MemoryTraceListener"></add>
+                                    </listeners>
+                                </allEvents>
+                                <notProcessed
+                                 name="Unprocessed Category"
+                                 switchValue="All">
+                                    <listeners>
+                                        <add
+                                         name="Rolling Flat File Trace Listener"></add>
+                                        <add
+                                         name="MemoryTraceListener"></add>
+                                    </listeners>
+                                </notProcessed>
+                                <errors
+                                 name="Logging Errors &amp; Warnings"
+                                 switchValue="All">
+                                    <listeners>
+                                        <add
+                                         name="Rolling Flat File Trace Listener"></add>
+                                        <add
+                                         name="MemoryTraceListener"></add>
+                                    </listeners>
+                                </errors>
+                            </specialSources>
+                        </loggingConfiguration>
                     </Value>
-                    <Timestamp>2021-07-12T06:50:06.633Z</Timestamp>
+                    <Timestamp>2021-07-12T07:30:42.358Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </ClientConfig>
+                <LogConfig>
+                    <Value>
+                        <loggingConfiguration
+                         defaultCategory="General"
+                         name=""
+                         tracingEnabled="false">
+                            <listeners>
+                                <add
+                                 formatter="Text Formatter"
+                                 listenerDataType="Microsoft.Practices.EnterpriseLibrary.Logging.Configuration.CustomTraceListenerData, Microsoft.Practices.EnterpriseLibrary.Logging"
+                                 name="MemoryTraceListener"
+                                 type="Printer.Infrastructure.Logging.MemoryTraceListener, Printer.Infrastructure"></add>
+                                <add
+                                 fileName="%ProgramData%/Palis/Palis_ThingWorxAgent/logs/trace.log"
+                                 footer=""
+                                 formatter="Text Formatter"
+                                 header=""
+                                 listenerDataType="Microsoft.Practices.EnterpriseLibrary.Logging.Configuration.RollingFlatFileTraceListenerData, Microsoft.Practices.EnterpriseLibrary.Logging"
+                                 name="Rolling Flat File Trace Listener"
+                                 rollFileExistsBehavior="Increment"
+                                 rollInterval="Day"
+                                 rollSizeKB="10240"
+                                 type="Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.RollingFlatFileTraceListener, Microsoft.Practices.EnterpriseLibrary.Logging"></add>
+                            </listeners>
+                            <formatters>
+                                <add
+                                 name="Text Formatter"
+                                 template="{timestamp(local)}|{severity}|{property(ActivityId)}|{dictionary({value})}|{message}"
+                                 type="Microsoft.Practices.EnterpriseLibrary.Logging.Formatters.TextFormatter, Microsoft.Practices.EnterpriseLibrary.Logging"></add>
+                            </formatters>
+                            <specialSources>
+                                <allEvents
+                                 name="All Events"
+                                 switchValue="All">
+                                    <listeners>
+                                        <add
+                                         name="Rolling Flat File Trace Listener"></add>
+                                        <add
+                                         name="MemoryTraceListener"></add>
+                                    </listeners>
+                                </allEvents>
+                                <notProcessed
+                                 name="Unprocessed Category"
+                                 switchValue="All">
+                                    <listeners>
+                                        <add
+                                         name="Rolling Flat File Trace Listener"></add>
+                                        <add
+                                         name="MemoryTraceListener"></add>
+                                    </listeners>
+                                </notProcessed>
+                                <errors
+                                 name="Logging Errors &amp; Warnings"
+                                 switchValue="All">
+                                    <listeners>
+                                        <add
+                                         name="Rolling Flat File Trace Listener"></add>
+                                        <add
+                                         name="MemoryTraceListener"></add>
+                                    </listeners>
+                                </errors>
+                            </specialSources>
+                        </loggingConfiguration>
+                    </Value>
+                    <Timestamp>2021-07-12T07:30:32.335Z</Timestamp>
+                    <Quality>GOOD</Quality>
+                </LogConfig>
             </ThingProperties>
         </Thing>
     </Things>
