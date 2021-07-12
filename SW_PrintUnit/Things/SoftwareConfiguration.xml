@@ -423,13 +423,13 @@
             <ImplementedShapes></ImplementedShapes>
             <ThingProperties>
                 <reportingLastEvaluation>
-                    <Value>2021-07-12T08:09:22.922Z</Value>
-                    <Timestamp>2021-07-12T08:09:22.922Z</Timestamp>
+                    <Value>2021-07-12T08:09:50.786Z</Value>
+                    <Timestamp>2021-07-12T08:09:50.786Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </reportingLastEvaluation>
                 <reportingLastChange>
-                    <Value>2021-07-12T08:09:22.922Z</Value>
-                    <Timestamp>2021-07-12T08:09:22.922Z</Timestamp>
+                    <Value>2021-07-12T08:09:50.786Z</Value>
+                    <Timestamp>2021-07-12T08:09:50.786Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </reportingLastChange>
                 <lastConnection>
@@ -501,7 +501,7 @@
                             </specialSources>
                         </loggingConfiguration>
                     </Value>
-                    <Timestamp>2021-07-12T08:09:35.784Z</Timestamp>
+                    <Timestamp>2021-07-12T08:09:47.795Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </ClientConfig>
                 <LogConfig>
