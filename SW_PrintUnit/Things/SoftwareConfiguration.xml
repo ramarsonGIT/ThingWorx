@@ -306,7 +306,7 @@
                      category=""
                      description=""
                      isLocalOnly="false"
-                     name="LogConfig"
+                     name="ServiceConfig"
                      ordinal="3"></PropertyDefinition>
                 </PropertyDefinitions>
                 <ServiceDefinitions></ServiceDefinitions>
@@ -402,10 +402,10 @@
                  aspect.startType="useDefaultValue"
                  aspect.tagAddress=""
                  foldType="NONE"
-                 name="LogConfig"
+                 name="ServiceConfig"
                  pushThreshold="0.0"
                  pushType="VALUE"
-                 sourceName="LogConfig"
+                 sourceName=""
                  timeout="0"></RemotePropertyBinding>
             </RemotePropertyBindings>
             <RemoteServiceBindings></RemoteServiceBindings>
@@ -418,61 +418,62 @@
                 <AlertDefinitions
                  name="ClientConfig"></AlertDefinitions>
                 <AlertDefinitions
-                 name="LogConfig"></AlertDefinitions>
+                 name="ServiceConfig"></AlertDefinitions>
             </AlertConfigurations>
             <ImplementedShapes></ImplementedShapes>
             <ThingProperties>
                 <reportingLastEvaluation>
-                    <Value>2021-07-12T08:16:33.472Z</Value>
-                    <Timestamp>2021-07-12T08:16:33.472Z</Timestamp>
+                    <Value>2021-07-12T09:32:33.908Z</Value>
+                    <Timestamp>2021-07-12T09:32:33.908Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </reportingLastEvaluation>
                 <reportingLastChange>
-                    <Value>2021-07-12T08:16:33.472Z</Value>
-                    <Timestamp>2021-07-12T08:16:33.472Z</Timestamp>
+                    <Value>2021-07-12T09:32:33.908Z</Value>
+                    <Timestamp>2021-07-12T09:32:33.908Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </reportingLastChange>
                 <lastConnection>
-                    <Value>2021-07-12T08:14:54.421Z</Value>
-                    <Timestamp>2021-07-12T08:14:54.421Z</Timestamp>
+                    <Value>2021-07-12T09:32:33.907Z</Value>
+                    <Timestamp>2021-07-12T09:32:33.907Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </lastConnection>
+                <ServiceConfig>
+                    <Value>
+                        <WcfConfiguration>
+                            <endPoints>
+                                <endPoint
+                                 autoReconnectTimeout="00:00:30"
+                                 isAutoReconnectSupported="True"
+                                 maximumRetry="31"
+                                 name="PrintEngineService"
+                                 uri="net.tcp://localhost:9041/PrintEngineService"></endPoint>
+                                <!-- This is currently deactivated because it's no need to configure this elements after initial operation. If this values would be changed accidentally it can be worsen the print quality. US #2613 "Voreilung aus UI entfernen"
+    <endPoint name="WebTrackRollerClient" uri="net.tcp://localhost:9026/WebTrackRollerService" />-->
+                            </endPoints>
+                        </WcfConfiguration>
+                    </Value>
+                    <Timestamp>2021-07-12T09:32:37.559Z</Timestamp>
+                    <Quality>GOOD</Quality>
+                </ServiceConfig>
                 <ClientConfig>
                     <Value>
-                        <WcfConfiguration>
+                        <WcfConfiguration
+                         isDebugEnabled="true">
                             <endPoints>
                                 <endPoint
                                  autoReconnectTimeout="00:00:30"
                                  isAutoReconnectSupported="True"
-                                 maximumRetry="31"
-                                 name="PrintEngineService"
+                                 maximumRetry="3"
+                                 name="PrintEngineClient"
                                  uri="net.tcp://localhost:9041/PrintEngineService"></endPoint>
                                 <!-- This is currently deactivated because it's no need to configure this elements after initial operation. If this values would be changed accidentally it can be worsen the print quality. US #2613 "Voreilung aus UI entfernen"
     <endPoint name="WebTrackRollerClient" uri="net.tcp://localhost:9026/WebTrackRollerService" />-->
                             </endPoints>
                         </WcfConfiguration>
                     </Value>
-                    <Timestamp>2021-07-12T08:16:33.218Z</Timestamp>
+                    <Timestamp>2021-07-12T09:32:37.554Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </ClientConfig>
-                <LogConfig>
-                    <Value>
-                        <WcfConfiguration>
-                            <endPoints>
-                                <endPoint
-                                 autoReconnectTimeout="00:00:30"
-                                 isAutoReconnectSupported="True"
-                                 maximumRetry="31"
-                                 name="PrintEngineService"
-                                 uri="net.tcp://localhost:9041/PrintEngineService"></endPoint>
-                                <!-- This is currently deactivated because it's no need to configure this elements after initial operation. If this values would be changed accidentally it can be worsen the print quality. US #2613 "Voreilung aus UI entfernen"
-    <endPoint name="WebTrackRollerClient" uri="net.tcp://localhost:9026/WebTrackRollerService" />-->
-                            </endPoints>
-                        </WcfConfiguration>
-                    </Value>
-                    <Timestamp>2021-07-12T08:16:31.175Z</Timestamp>
-                    <Quality>GOOD</Quality>
-                </LogConfig>
             </ThingProperties>
         </Thing>
     </Things>
