@@ -423,18 +423,18 @@
             <ImplementedShapes></ImplementedShapes>
             <ThingProperties>
                 <reportingLastEvaluation>
-                    <Value>2021-07-12T08:11:44.245Z</Value>
-                    <Timestamp>2021-07-12T08:11:44.245Z</Timestamp>
+                    <Value>2021-07-12T08:16:33.472Z</Value>
+                    <Timestamp>2021-07-12T08:16:33.472Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </reportingLastEvaluation>
                 <reportingLastChange>
-                    <Value>2021-07-12T08:11:44.245Z</Value>
-                    <Timestamp>2021-07-12T08:11:44.245Z</Timestamp>
+                    <Value>2021-07-12T08:16:33.472Z</Value>
+                    <Timestamp>2021-07-12T08:16:33.472Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </reportingLastChange>
                 <lastConnection>
-                    <Value>2021-07-12T08:11:18.256Z</Value>
-                    <Timestamp>2021-07-12T08:11:18.256Z</Timestamp>
+                    <Value>2021-07-12T08:14:54.421Z</Value>
+                    <Timestamp>2021-07-12T08:14:54.421Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </lastConnection>
                 <ClientConfig>
@@ -444,7 +444,7 @@
                                 <endPoint
                                  autoReconnectTimeout="00:00:30"
                                  isAutoReconnectSupported="True"
-                                 maximumRetry="3"
+                                 maximumRetry="31"
                                  name="PrintEngineService"
                                  uri="net.tcp://localhost:9041/PrintEngineService"></endPoint>
                                 <!-- This is currently deactivated because it's no need to configure this elements after initial operation. If this values would be changed accidentally it can be worsen the print quality. US #2613 "Voreilung aus UI entfernen"
@@ -452,7 +452,7 @@
                             </endPoints>
                         </WcfConfiguration>
                     </Value>
-                    <Timestamp>2021-07-12T08:11:41.426Z</Timestamp>
+                    <Timestamp>2021-07-12T08:16:33.218Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </ClientConfig>
                 <LogConfig>
@@ -462,7 +462,7 @@
                                 <endPoint
                                  autoReconnectTimeout="00:00:30"
                                  isAutoReconnectSupported="True"
-                                 maximumRetry="3"
+                                 maximumRetry="31"
                                  name="PrintEngineService"
                                  uri="net.tcp://localhost:9041/PrintEngineService"></endPoint>
                                 <!-- This is currently deactivated because it's no need to configure this elements after initial operation. If this values would be changed accidentally it can be worsen the print quality. US #2613 "Voreilung aus UI entfernen"
@@ -470,8 +470,8 @@
                             </endPoints>
                         </WcfConfiguration>
                     </Value>
-                    <Timestamp>2021-07-12T08:11:25.822Z</Timestamp>
-                    <Quality>UNKNOWN</Quality>
+                    <Timestamp>2021-07-12T08:16:31.175Z</Timestamp>
+                    <Quality>GOOD</Quality>
                 </LogConfig>
             </ThingProperties>
         </Thing>
