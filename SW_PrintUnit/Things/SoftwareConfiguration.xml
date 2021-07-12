@@ -399,18 +399,18 @@
             <ImplementedShapes></ImplementedShapes>
             <ThingProperties>
                 <reportingLastEvaluation>
-                    <Value>2021-07-12T06:48:24.102Z</Value>
-                    <Timestamp>2021-07-12T06:48:24.102Z</Timestamp>
+                    <Value>2021-07-12T06:50:04.457Z</Value>
+                    <Timestamp>2021-07-12T06:50:04.457Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </reportingLastEvaluation>
                 <reportingLastChange>
-                    <Value>2021-07-12T06:48:24.102Z</Value>
-                    <Timestamp>2021-07-12T06:48:24.102Z</Timestamp>
+                    <Value>2021-07-12T06:50:04.457Z</Value>
+                    <Timestamp>2021-07-12T06:50:04.457Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </reportingLastChange>
                 <lastConnection>
-                    <Value>2021-07-12T06:48:24.102Z</Value>
-                    <Timestamp>2021-07-12T06:48:24.102Z</Timestamp>
+                    <Value>2021-07-12T06:50:04.456Z</Value>
+                    <Timestamp>2021-07-12T06:50:04.456Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </lastConnection>
                 <ClientConfig>
@@ -421,6 +421,7 @@
                                 <endPoint
                                  autoReconnectTimeout="00:00:30"
                                  isAutoReconnectSupported="True"
+                                 maximumRetry="2"
                                  name="PrintEngineClient"
                                  uri="net.tcp://localhost:9041/PrintEngineService"></endPoint>
                                 <!-- This is currently deactivated because it's no need to configure this elements after initial operation. If this values would be changed accidentally it can be worsen the print quality. US #2613 "Voreilung aus UI entfernen"
@@ -428,7 +429,7 @@
                             </endPoints>
                         </WcfConfiguration>
                     </Value>
-                    <Timestamp>2021-07-12T06:48:27.554Z</Timestamp>
+                    <Timestamp>2021-07-12T06:50:06.633Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </ClientConfig>
             </ThingProperties>
