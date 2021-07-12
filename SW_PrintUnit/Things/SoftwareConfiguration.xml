@@ -423,18 +423,18 @@
             <ImplementedShapes></ImplementedShapes>
             <ThingProperties>
                 <reportingLastEvaluation>
-                    <Value>2021-07-12T07:39:22.226Z</Value>
-                    <Timestamp>2021-07-12T07:39:22.226Z</Timestamp>
+                    <Value>2021-07-12T08:09:22.922Z</Value>
+                    <Timestamp>2021-07-12T08:09:22.922Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </reportingLastEvaluation>
                 <reportingLastChange>
-                    <Value>2021-07-12T07:39:22.226Z</Value>
-                    <Timestamp>2021-07-12T07:39:22.226Z</Timestamp>
+                    <Value>2021-07-12T08:09:22.922Z</Value>
+                    <Timestamp>2021-07-12T08:09:22.922Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </reportingLastChange>
                 <lastConnection>
-                    <Value>2021-07-12T07:37:47.774Z</Value>
-                    <Timestamp>2021-07-12T07:37:47.774Z</Timestamp>
+                    <Value>2021-07-12T08:09:22.922Z</Value>
+                    <Timestamp>2021-07-12T08:09:22.922Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </lastConnection>
                 <ClientConfig>
@@ -501,7 +501,7 @@
                             </specialSources>
                         </loggingConfiguration>
                     </Value>
-                    <Timestamp>2021-07-12T07:39:21.461Z</Timestamp>
+                    <Timestamp>2021-07-12T08:09:35.784Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </ClientConfig>
                 <LogConfig>
@@ -568,7 +568,7 @@
                             </specialSources>
                         </loggingConfiguration>
                     </Value>
-                    <Timestamp>2021-07-12T07:38:26.768Z</Timestamp>
+                    <Timestamp>2021-07-12T08:09:30.413Z</Timestamp>
                     <Quality>UNKNOWN</Quality>
                 </LogConfig>
             </ThingProperties>
