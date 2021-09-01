@@ -145,7 +145,17 @@
                 </ConfigurationTable>
             </ConfigurationTables>
             <ThingShape>
-                <PropertyDefinitions></PropertyDefinitions>
+                <PropertyDefinitions>
+                    <PropertyDefinition
+                     aspect.cacheTime="0.0"
+                     aspect.dataChangeType="VALUE"
+                     baseType="STRING"
+                     category=""
+                     description=""
+                     isLocalOnly="false"
+                     name="test"
+                     ordinal="2"></PropertyDefinition>
+                </PropertyDefinitions>
                 <ServiceDefinitions></ServiceDefinitions>
                 <EventDefinitions></EventDefinitions>
                 <ServiceMappings></ServiceMappings>
@@ -156,7 +166,10 @@
             <RemotePropertyBindings></RemotePropertyBindings>
             <RemoteServiceBindings></RemoteServiceBindings>
             <RemoteEventBindings></RemoteEventBindings>
-            <AlertConfigurations></AlertConfigurations>
+            <AlertConfigurations>
+                <AlertDefinitions
+                 name="test"></AlertDefinitions>
+            </AlertConfigurations>
             <ImplementedShapes></ImplementedShapes>
             <ThingProperties>
                 <reportingLastEvaluation>
