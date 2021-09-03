@@ -17,7 +17,7 @@
          published="false"
          tags=""
          thingTemplate="RemoteThingWithTunnelsAndFileTransfer"
-         valueStream="Printhead_VS">
+         valueStream="Pais.IIoT.Printhead_VS">
             <avatar></avatar>
             <DesignTimePermissions>
                 <Create></Create>
@@ -309,7 +309,24 @@
                      name="ServiceConfig"
                      ordinal="3"></PropertyDefinition>
                 </PropertyDefinitions>
-                <ServiceDefinitions></ServiceDefinitions>
+                <ServiceDefinitions>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="Test">
+                        <ResultType
+                         baseType="NOTHING"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions></ParameterDefinitions>
+                    </ServiceDefinition>
+                </ServiceDefinitions>
                 <EventDefinitions>
                     <EventDefinition
                      category="Faults"
@@ -318,7 +335,62 @@
                      name="ConfigChanged"></EventDefinition>
                 </EventDefinitions>
                 <ServiceMappings></ServiceMappings>
-                <ServiceImplementations></ServiceImplementations>
+                <ServiceImplementations>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="Test">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             dataShapeName=""
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        logger.warn("Started export");
+                                        
+                                        var entities = Things["GIT.Utility.Thing"].GetProjectEntities({
+                                        	project: "SW_PrintUnit" /* STRING */,
+                                        	entityName: "SoftwareConfiguration" /* STRING */,
+                                        	entityType: "Thing" /* STRING */
+                                        });
+                                        
+                                        logger.warn(entities);
+                                        
+                                        var ex = Things["SoftwareConfigurationGIT"].ExportProjectEntities({
+                                        	ProjectName: "SW_PrintUnit" /* STRING */,
+                                        	includeDependents: true /* BOOLEAN */,
+                                        	EntitiesToExport: entities /* INFOTABLE */
+                                        });
+                                        
+                                        logger.warn("exported");
+                                        
+                                        //logger.warn("Started Push");
+                                        //// Result: STRING
+                                        //let Result = Things["SoftwareConfigurationGIT"].Push({
+                                        //	Message: "Test" /* STRING */
+                                        //});
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                </ServiceImplementations>
                 <Subscriptions>
                     <Subscription
                      description=""
@@ -423,13 +495,13 @@
             <ImplementedShapes></ImplementedShapes>
             <ThingProperties>
                 <reportingLastEvaluation>
-                    <Value>2021-07-12T09:34:33.743Z</Value>
-                    <Timestamp>2021-07-12T09:34:33.743Z</Timestamp>
+                    <Value>2021-07-12T09:34:43.063Z</Value>
+                    <Timestamp>2021-07-12T09:34:43.063Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </reportingLastEvaluation>
                 <reportingLastChange>
-                    <Value>2021-07-12T09:34:33.743Z</Value>
-                    <Timestamp>2021-07-12T09:34:33.743Z</Timestamp>
+                    <Value>2021-07-12T09:34:43.063Z</Value>
+                    <Timestamp>2021-07-12T09:34:43.063Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </reportingLastChange>
                 <lastConnection>
@@ -453,7 +525,7 @@
                         </WcfConfiguration>
                     </Value>
                     <Timestamp>2021-07-12T09:34:36.907Z</Timestamp>
-                    <Quality>GOOD</Quality>
+                    <Quality>UNKNOWN</Quality>
                 </ServiceConfig>
                 <ClientConfig>
                     <Value>
@@ -472,7 +544,7 @@
                         </WcfConfiguration>
                     </Value>
                     <Timestamp>2021-07-12T09:34:36.906Z</Timestamp>
-                    <Quality>GOOD</Quality>
+                    <Quality>UNKNOWN</Quality>
                 </ClientConfig>
             </ThingProperties>
         </Thing>
