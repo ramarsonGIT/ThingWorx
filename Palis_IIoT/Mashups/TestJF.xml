@@ -1,0 +1,1687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entities
+ majorVersion="9"
+ minorVersion="1"
+ universal="password">
+    <Mashups>
+        <Mashup
+         aspect.isFlex="true"
+         aspect.isResponsive="true"
+         aspect.mashupType="mashup"
+         columns="0.0"
+         description=""
+         documentationContent=""
+         homeMashup=""
+         name="TestJF"
+         projectName="Palis_IIoT"
+         rows="0.0"
+         tags="">
+            <avatar></avatar>
+            <DesignTimePermissions>
+                <Create></Create>
+                <Read></Read>
+                <Update></Update>
+                <Delete></Delete>
+                <Metadata></Metadata>
+            </DesignTimePermissions>
+            <RunTimePermissions></RunTimePermissions>
+            <VisibilityPermissions>
+                <Visibility></Visibility>
+            </VisibilityPermissions>
+            <ConfigurationTableDefinitions></ConfigurationTableDefinitions>
+            <ConfigurationTables>
+                <ConfigurationTable
+                 dataShapeName=""
+                 description="Mashup Mobile Settings"
+                 isHidden="true"
+                 isMultiRow="false"
+                 name="MobileSettings"
+                 ordinal="0">
+                    <DataShape>
+                        <FieldDefinitions>
+                            <FieldDefinition
+                             aspect.defaultValue="false"
+                             aspect.friendlyName="Disable Zoom"
+                             baseType="BOOLEAN"
+                             description="Disables zooming in and out within the mashup"
+                             name="disableZoom"
+                             ordinal="0"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.defaultValue="true"
+                             aspect.friendlyName="Full Screen Mode"
+                             baseType="BOOLEAN"
+                             description="Open the mashup in full screen mode"
+                             name="fullScreenMode"
+                             ordinal="0"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.friendlyName="Height"
+                             baseType="STRING"
+                             description="The height of the mashup page"
+                             name="height"
+                             ordinal="0"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.defaultValue="device-height"
+                             aspect.friendlyName="Height Type"
+                             baseType="STRING"
+                             description="Use the height of the device display, or a custom height (in px)"
+                             name="heightType"
+                             ordinal="0"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.defaultValue="1.0"
+                             aspect.friendlyName="Initial Scale"
+                             baseType="NUMBER"
+                             description="The initial zoom scale when the mashup is loaded for the first time"
+                             name="initialScale"
+                             ordinal="0"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.friendlyName="Shortcut Icon Title"
+                             baseType="STRING"
+                             description="A title for the mashup shortcut on the iOS home screen"
+                             name="iosShortcutIconTitle"
+                             ordinal="0"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.defaultValue="black-translucent"
+                             aspect.friendlyName="Status Bar Appearance"
+                             baseType="STRING"
+                             description="The style of the iOS status bar"
+                             name="iosStatusBarAppearance"
+                             ordinal="0"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.defaultValue="10.0"
+                             aspect.friendlyName="Maximum Scale"
+                             baseType="NUMBER"
+                             description="The maximum scale that users can zoom out to"
+                             name="maximumScale"
+                             ordinal="0"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.defaultValue="0.1"
+                             aspect.friendlyName="Minimum Scale"
+                             baseType="NUMBER"
+                             description="The minimum scale that users can zoom out to"
+                             name="minimumScale"
+                             ordinal="0"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.friendlyName="Width"
+                             baseType="STRING"
+                             description="The width of the mashup page"
+                             name="width"
+                             ordinal="0"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.defaultValue="device-width"
+                             aspect.friendlyName="Width Type"
+                             baseType="STRING"
+                             description="Use the width of the device display, or a custom width (in px)"
+                             name="widthType"
+                             ordinal="0"></FieldDefinition>
+                        </FieldDefinitions>
+                    </DataShape>
+                    <Rows>
+                        <Row>
+                            <disableZoom>false</disableZoom>
+                            <fullScreenMode>true</fullScreenMode>
+                            <height>
+                            <![CDATA[
+                            device-height
+                            ]]>
+                            </height>
+                            <heightType>
+                            <![CDATA[
+                            device-height
+                            ]]>
+                            </heightType>
+                            <initialScale>1.0</initialScale>
+                            <iosShortcutIconTitle></iosShortcutIconTitle>
+                            <iosStatusBarAppearance>
+                            <![CDATA[
+                            black-translucent
+                            ]]>
+                            </iosStatusBarAppearance>
+                            <maximumScale>10.0</maximumScale>
+                            <minimumScale>0.1</minimumScale>
+                            <width>
+                            <![CDATA[
+                            device-width
+                            ]]>
+                            </width>
+                            <widthType>
+                            <![CDATA[
+                            device-width
+                            ]]>
+                            </widthType>
+                        </Row>
+                    </Rows>
+                </ConfigurationTable>
+            </ConfigurationTables>
+            <ParameterDefinitions></ParameterDefinitions>
+            <Things></Things>
+            <ThingShapes></ThingShapes>
+            <ThingTemplates></ThingTemplates>
+            <mashupContent>
+            <![CDATA[
+            {
+              "CustomMashupCss" : "",
+              "Data" : {
+                "DynamicThingTemplates_Palis.IIoT.WebtensionControlWinder_TT" : {
+                  "DataName" : "DynamicThingTemplates_Palis.IIoT.WebtensionControlWinder_TT",
+                  "EntityName" : "Palis.IIoT.WebtensionControlWinder_TT",
+                  "EntityType" : "DynamicThingTemplates",
+                  "Id" : "e29861c4-9766-444d-b41d-95dc9a2d1ebc",
+                  "RefreshInterval" : 0,
+                  "Services" : [ {
+                    "APIMethod" : "post",
+                    "Characteristic" : "Services",
+                    "Id" : "08c2c979-5136-4850-a7f3-c4281a435024",
+                    "Name" : "GetPropertyValues",
+                    "Parameters" : { },
+                    "RefreshInterval" : 0,
+                    "Target" : "GetPropertyValues"
+                  } ]
+                },
+                "Session" : {
+                  "DataName" : "Session",
+                  "EntityName" : "",
+                  "EntityType" : "Session",
+                  "Id" : "session",
+                  "Services" : [ {
+                    "APIMethod" : "post",
+                    "Characteristic" : "Services",
+                    "Id" : "SessionInterface",
+                    "Name" : "GetGlobalSessionValues",
+                    "Parameters" : { },
+                    "RefreshInterval" : 0,
+                    "Target" : "GetGlobalSessionValues"
+                  } ]
+                },
+                "UserExtensions" : {
+                  "DataName" : "UserExtensions",
+                  "EntityName" : "",
+                  "EntityType" : "UserExtensions",
+                  "Id" : "UserExtensions",
+                  "Services" : [ {
+                    "APIMethod" : "post",
+                    "Characteristic" : "Services",
+                    "Id" : "UserExtensionInterface",
+                    "Name" : "GetCurrentUserExtensionProperties",
+                    "Parameters" : { },
+                    "RefreshInterval" : 0,
+                    "Target" : "GetCurrentUserExtensionProperties"
+                  } ]
+                }
+              },
+              "DataBindings" : [ {
+                "Id" : "acbec716-fdde-4c36-a60f-fbc99dab8815",
+                "PropertyMaps" : [ {
+                  "SourceProperty" : "ActualDancerPosition",
+                  "SourcePropertyBaseType" : "NUMBER",
+                  "SourcePropertyType" : "Field",
+                  "TargetProperty" : "Data",
+                  "TargetPropertyBaseType" : "ANYSCALAR",
+                  "TargetPropertyType" : "property"
+                } ],
+                "SourceArea" : "Data",
+                "SourceDetails" : "AllData",
+                "SourceId" : "GetPropertyValues",
+                "SourceName" : "GetPropertyValues",
+                "SourceSection" : "DynamicThingTemplates_Palis.IIoT.WebtensionControlWinder_TT",
+                "TargetArea" : "UI",
+                "TargetId" : "ptcsvaluedisplay-29",
+                "TargetSection" : ""
+              }, {
+                "Id" : "a595c102-93f5-4e68-84ff-f3fd506b53bd",
+                "PropertyMaps" : [ {
+                  "SourceProperty" : "ActualPosition",
+                  "SourcePropertyBaseType" : "NUMBER",
+                  "SourcePropertyType" : "Field",
+                  "TargetProperty" : "Data",
+                  "TargetPropertyBaseType" : "ANYSCALAR",
+                  "TargetPropertyType" : "property"
+                } ],
+                "SourceArea" : "Data",
+                "SourceDetails" : "AllData",
+                "SourceId" : "GetPropertyValues",
+                "SourceSection" : "DynamicThingTemplates_Palis.IIoT.WebtensionControlWinder_TT",
+                "TargetArea" : "UI",
+                "TargetId" : "ptcsvaluedisplay-11",
+                "TargetSection" : ""
+              }, {
+                "Id" : "c04ddee7-ab61-4c89-9c1c-1671b20bfc57",
+                "PropertyMaps" : [ {
+                  "SourceProperty" : "ActualSpeed",
+                  "SourcePropertyBaseType" : "NUMBER",
+                  "SourcePropertyType" : "Field",
+                  "TargetProperty" : "Data",
+                  "TargetPropertyBaseType" : "ANYSCALAR",
+                  "TargetPropertyType" : "property"
+                } ],
+                "SourceArea" : "Data",
+                "SourceDetails" : "AllData",
+                "SourceId" : "GetPropertyValues",
+                "SourceSection" : "DynamicThingTemplates_Palis.IIoT.WebtensionControlWinder_TT",
+                "TargetArea" : "UI",
+                "TargetId" : "ptcsvaluedisplay-12",
+                "TargetSection" : ""
+              }, {
+                "Id" : "9dadbdab-e18f-4032-9622-631687fb42e3",
+                "PropertyMaps" : [ {
+                  "SourceProperty" : "Text",
+                  "SourcePropertyBaseType" : "STRING",
+                  "SourcePropertyType" : "Property",
+                  "TargetProperty" : "value",
+                  "TargetPropertyBaseType" : "THINGNAME",
+                  "TargetPropertyType" : "Entity"
+                } ],
+                "SourceArea" : "UI",
+                "SourceDetails" : "",
+                "SourceId" : "ptcstextfield-40",
+                "SourceSection" : "",
+                "TargetArea" : "Data",
+                "TargetId" : "EntityName",
+                "TargetSection" : "DynamicThingTemplates_Palis.IIoT.WebtensionControlWinder_TT"
+              } ],
+              "DesignTimePermissions" : { },
+              "Events" : [ {
+                "EventHandlerArea" : "Data",
+                "EventHandlerId" : "DynamicThingTemplates_Palis.IIoT.WebtensionControlWinder_TT",
+                "EventHandlerService" : "GetPropertyValues",
+                "EventTriggerArea" : "Mashup",
+                "EventTriggerEvent" : "Loaded",
+                "EventTriggerId" : "mashup-root",
+                "EventTriggerSection" : "",
+                "Id" : "96f06671-44ac-449e-8c7b-7396a4e6bdfd"
+              }, {
+                "EventHandlerArea" : "Data",
+                "EventHandlerId" : "DynamicThingTemplates_Palis.IIoT.WebtensionControlWinder_TT",
+                "EventHandlerService" : "GetPropertyValues",
+                "EventTriggerArea" : "UI",
+                "EventTriggerEvent" : "Refresh",
+                "EventTriggerId" : "autorefresh-39",
+                "EventTriggerSection" : "",
+                "Id" : "362be44e-32b4-40c3-851d-0ddf4025a724"
+              } ],
+              "RunTimePermissions" : { },
+              "UI" : {
+                "Properties" : {
+                  "AddToDashboardButton" : "SimplePlus",
+                  "AddToDashboardButtonStyle" : "DefaultAddToDashboardButtonStyle",
+                  "Area" : "Mashup",
+                  "BGImage" : "",
+                  "BGImageRepeat" : "no-repeat",
+                  "BGImageSize" : "auto",
+                  "Columns" : 0,
+                  "ConfigureGadgetButton" : "SimpleGear",
+                  "ConfigureGadgetButtonStyle" : "DefaultConfigureGadgetButtonStyle",
+                  "DisplayName" : "Mashup",
+                  "EnableParameterEditing" : false,
+                  "Height" : 618,
+                  "Id" : "mashup-root",
+                  "IgnoreWarningsInViewMashup" : false,
+                  "IsPrintLayout" : false,
+                  "Left" : 0,
+                  "MashupToEditGadget" : "DefaultMashupToEditGadget",
+                  "MinHeight" : 0,
+                  "MinWidth" : 0,
+                  "ResponsiveLayout" : true,
+                  "Rows" : 0,
+                  "ShowDataLoading" : true,
+                  "Style" : "DefaultMashupStyle",
+                  "StyleProperties" : {
+                    "data" : {
+                      "ptcslabel-14" : {
+                        "parts" : {
+                          "$" : {
+                            "$" : {
+                              "background" : "#DF3A01",
+                              "border-color" : "inherit"
+                            }
+                          }
+                        },
+                        "widget" : "ptcs-label"
+                      },
+                      "ptcslabel-15" : {
+                        "parts" : {
+                          "$" : {
+                            "$" : {
+                              "background" : "#21610B",
+                              "border-color" : "inherit"
+                            }
+                          }
+                        },
+                        "widget" : "ptcs-label"
+                      },
+                      "ptcslabel-18" : {
+                        "parts" : {
+                          "$" : {
+                            "$" : {
+                              "background" : "#DF3A01",
+                              "border-color" : "#DF3A01"
+                            }
+                          }
+                        },
+                        "widget" : "ptcs-label"
+                      },
+                      "ptcslabel-19" : {
+                        "parts" : {
+                          "$" : {
+                            "$" : {
+                              "background" : "#DF3A01",
+                              "border-color" : "inherit"
+                            }
+                          }
+                        },
+                        "widget" : "ptcs-label"
+                      },
+                      "ptcslabel-21" : {
+                        "parts" : {
+                          "$" : {
+                            "$" : {
+                              "background" : "#21610B",
+                              "border-color" : "inherit"
+                            }
+                          }
+                        },
+                        "widget" : "ptcs-label"
+                      },
+                      "ptcslabel-35" : {
+                        "parts" : {
+                          "$" : {
+                            "$" : {
+                              "background" : "#DF3A01",
+                              "border-color" : "#DF3A01"
+                            }
+                          }
+                        },
+                        "widget" : "ptcs-label"
+                      },
+                      "ptcslabel-36" : {
+                        "parts" : {
+                          "$" : {
+                            "$" : {
+                              "background" : "#DF3A01",
+                              "border-color" : "#DF3A01"
+                            }
+                          }
+                        },
+                        "widget" : "ptcs-label"
+                      },
+                      "ptcsvaluedisplay-11" : {
+                        "parts" : {
+                          "$" : {
+                            "$" : {
+                              "background" : "#c2c7ce"
+                            }
+                          }
+                        },
+                        "widget" : "ptcs-value-display"
+                      },
+                      "ptcsvaluedisplay-12" : {
+                        "parts" : {
+                          "$" : {
+                            "$" : {
+                              "background" : "#c2c7ce"
+                            }
+                          }
+                        },
+                        "widget" : "ptcs-value-display"
+                      },
+                      "ptcsvaluedisplay-13" : {
+                        "parts" : {
+                          "$" : {
+                            "$" : {
+                              "background" : "#c2c7ce"
+                            }
+                          }
+                        },
+                        "widget" : "ptcs-value-display"
+                      },
+                      "ptcsvaluedisplay-22" : {
+                        "parts" : {
+                          "$" : {
+                            "$" : {
+                              "background" : "#c2c7ce"
+                            }
+                          }
+                        },
+                        "widget" : "ptcs-value-display"
+                      },
+                      "ptcsvaluedisplay-23" : {
+                        "parts" : {
+                          "$" : {
+                            "$" : {
+                              "background" : "#c2c7ce"
+                            }
+                          }
+                        },
+                        "widget" : "ptcs-value-display"
+                      }
+                    },
+                    "meta" : {
+                      "type" : "WidgetStyler",
+                      "version" : "1.0"
+                    }
+                  },
+                  "StyleTheme" : "PTC Convergence Theme",
+                  "Title" : "",
+                  "TitleBar" : false,
+                  "TitleBarStyle" : "DefaultTitleBarStyle",
+                  "TitleBarText" : "Gadget Title Here",
+                  "Top" : 0,
+                  "Type" : "mashup",
+                  "UseMasterTheme" : false,
+                  "UseTheme" : false,
+                  "UseThemeForHybrids" : false,
+                  "Visible" : true,
+                  "Width" : 1024,
+                  "Z-index" : 10,
+                  "__TypeDisplayName" : "MashupTemplate",
+                  "id_index" : 40,
+                  "supportsAutoResize" : true
+                },
+                "Widgets" : [ {
+                  "Properties" : {
+                    "Area" : "UI",
+                    "DisplayName" : "container-2",
+                    "EnableExpandCollapse" : false,
+                    "ExpandCollapseTabLocation" : "inside",
+                    "Expanded" : true,
+                    "Id" : "flexcontainer-2",
+                    "LastContainer" : true,
+                    "Overlay" : false,
+                    "ResponsiveLayout" : true,
+                    "ShowDataLoading" : true,
+                    "ShowExpandCollapseTab" : false,
+                    "SourceURL" : "",
+                    "Style" : "DefaultContainerStyle",
+                    "StyleProperties" : { },
+                    "Type" : "flexcontainer",
+                    "UseTheme" : true,
+                    "Visible" : true,
+                    "Z-index" : 10,
+                    "__TypeDisplayName" : "Responsive Container",
+                    "align-content" : "flex-start",
+                    "align-items" : "flex-start",
+                    "flex-basis" : "auto",
+                    "flex-direction" : "row",
+                    "flex-grow" : 1,
+                    "flex-max-height" : "",
+                    "flex-max-width" : "",
+                    "flex-min-height" : "",
+                    "flex-min-width" : "",
+                    "flex-shrink" : 1,
+                    "flex-size" : "default",
+                    "flex-wrap" : "nowrap",
+                    "iconClass" : "widgets-flexcontainer",
+                    "justify-content" : "flex-start",
+                    "positioning" : "responsive",
+                    "userCannotRemove" : true
+                  },
+                  "Widgets" : [ {
+                    "Properties" : {
+                      "Area" : "UI",
+                      "DisplayName" : "fieldset-3",
+                      "FieldsetLabelStyle" : "DefaultFieldsetLabelStyle",
+                      "FieldsetStyle" : "DefaultDashboardStyle",
+                      "Height" : 100,
+                      "Id" : "fieldset-3",
+                      "LastContainer" : false,
+                      "Left" : 184.07498168945312,
+                      "ResponsiveLayout" : true,
+                      "ShowDataLoading" : true,
+                      "Title" : "Unwinder",
+                      "Top" : 111.5999984741211,
+                      "Type" : "fieldset",
+                      "Visible" : true,
+                      "Width" : 300,
+                      "Z-index" : 10,
+                      "__TypeDisplayName" : "Fieldset"
+                    },
+                    "Widgets" : [ {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DisclosureControl" : "show-more",
+                        "DisplayName" : "ptcs-label-4",
+                        "HorizontalAlignment" : "center",
+                        "Id" : "ptcslabel-4",
+                        "LabelText" : "State",
+                        "LabelType" : "label",
+                        "LastContainer" : false,
+                        "Left" : 25,
+                        "MultiLine" : true,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : true,
+                        "Top" : 30,
+                        "Type" : "ptcslabel",
+                        "UseTheme" : true,
+                        "VerticalAlignment" : "center",
+                        "Visible" : true,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Label",
+                        "overflowShowLessTxt" : "[[showLess]]",
+                        "overflowShowMoreTxt" : "[[showMore]]"
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DisclosureControl" : "show-more",
+                        "DisplayName" : "ptcs-label-5",
+                        "Height" : 19,
+                        "HorizontalAlignment" : "left",
+                        "Id" : "ptcslabel-5",
+                        "LabelText" : "Actual Webtension",
+                        "LabelType" : "label",
+                        "LastContainer" : false,
+                        "Left" : 187,
+                        "MultiLine" : true,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : true,
+                        "Top" : 30,
+                        "Type" : "ptcslabel",
+                        "UseTheme" : true,
+                        "VerticalAlignment" : "flex-start",
+                        "Visible" : true,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Label",
+                        "overflowShowLessTxt" : "[[showLess]]",
+                        "overflowShowMoreTxt" : "[[showMore]]"
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DisclosureControl" : "show-more",
+                        "DisplayName" : "ptcs-label-6",
+                        "HorizontalAlignment" : "left",
+                        "Id" : "ptcslabel-6",
+                        "LabelText" : "Target Webtension",
+                        "LabelType" : "label",
+                        "LastContainer" : false,
+                        "Left" : 335,
+                        "MultiLine" : true,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : true,
+                        "Top" : 28,
+                        "Type" : "ptcslabel",
+                        "UseTheme" : true,
+                        "VerticalAlignment" : "flex-start",
+                        "Visible" : true,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Label",
+                        "overflowShowLessTxt" : "[[showLess]]",
+                        "overflowShowMoreTxt" : "[[showMore]]"
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DisclosureControl" : "show-more",
+                        "DisplayName" : "ptcs-label-7",
+                        "HorizontalAlignment" : "left",
+                        "Id" : "ptcslabel-7",
+                        "LabelText" : "Webspeed",
+                        "LabelType" : "label",
+                        "LastContainer" : false,
+                        "Left" : 491.98748779296875,
+                        "MultiLine" : true,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : true,
+                        "Top" : 28,
+                        "Type" : "ptcslabel",
+                        "UseTheme" : true,
+                        "VerticalAlignment" : "flex-start",
+                        "Visible" : true,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Label",
+                        "overflowShowLessTxt" : "[[showLess]]",
+                        "overflowShowMoreTxt" : "[[showMore]]"
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DisplayName" : "fieldset-8",
+                        "FieldsetLabelStyle" : "DefaultFieldsetLabelStyle",
+                        "FieldsetStyle" : "DefaultDashboardStyle",
+                        "Height" : 132,
+                        "Id" : "fieldset-8",
+                        "LastContainer" : false,
+                        "Left" : 28,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : true,
+                        "Title" : "Drive",
+                        "Top" : 255.6750030517578,
+                        "Type" : "fieldset",
+                        "Visible" : true,
+                        "Width" : 570,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Fieldset"
+                      },
+                      "Widgets" : [ {
+                        "Properties" : {
+                          "Area" : "UI",
+                          "DisclosureControl" : "show-more",
+                          "DisplayName" : "ptcs-label-9",
+                          "Height" : 19,
+                          "HorizontalAlignment" : "left",
+                          "Id" : "ptcslabel-9",
+                          "LabelText" : "Actual Position",
+                          "LabelType" : "label",
+                          "LastContainer" : false,
+                          "Left" : 133,
+                          "MultiLine" : true,
+                          "ResponsiveLayout" : false,
+                          "ShowDataLoading" : true,
+                          "Top" : 26,
+                          "Type" : "ptcslabel",
+                          "UseTheme" : true,
+                          "VerticalAlignment" : "flex-start",
+                          "Visible" : true,
+                          "Z-index" : 10,
+                          "__TypeDisplayName" : "Label",
+                          "overflowShowLessTxt" : "[[showLess]]",
+                          "overflowShowMoreTxt" : "[[showMore]]"
+                        },
+                        "Widgets" : [ ]
+                      }, {
+                        "Properties" : {
+                          "Area" : "UI",
+                          "DisclosureControl" : "show-more",
+                          "DisplayName" : "ptcs-label-10",
+                          "Height" : 20,
+                          "HorizontalAlignment" : "left",
+                          "Id" : "ptcslabel-10",
+                          "LabelText" : "Actual Torque Force",
+                          "LabelType" : "label",
+                          "LastContainer" : false,
+                          "Left" : 400,
+                          "MultiLine" : true,
+                          "ResponsiveLayout" : false,
+                          "ShowDataLoading" : true,
+                          "Top" : 26,
+                          "Type" : "ptcslabel",
+                          "UseTheme" : true,
+                          "VerticalAlignment" : "flex-start",
+                          "Visible" : true,
+                          "Z-index" : 10,
+                          "__TypeDisplayName" : "Label",
+                          "overflowShowLessTxt" : "[[showLess]]",
+                          "overflowShowMoreTxt" : "[[showMore]]"
+                        },
+                        "Widgets" : [ ]
+                      }, {
+                        "Properties" : {
+                          "Area" : "UI",
+                          "DataBaseType" : "NUMBER",
+                          "Disabled" : false,
+                          "DisclosureControl" : "disclosure",
+                          "DisplayName" : "ptcs-valuedisplay-11",
+                          "Height" : 60,
+                          "HorizontalAlignment" : "center",
+                          "Id" : "ptcsvaluedisplay-11",
+                          "ItemMeta" : {
+                            "type" : "text"
+                          },
+                          "Label" : "",
+                          "LabelAlignment" : "left",
+                          "LabelType" : "label",
+                          "LastContainer" : false,
+                          "Left" : 155,
+                          "ModalHeight" : 380,
+                          "ModalWidth" : 600,
+                          "MultiLine" : true,
+                          "ResponsiveLayout" : false,
+                          "ShowDataLoading" : false,
+                          "TabSequence" : 0,
+                          "TextIfNoValue" : "",
+                          "Top" : 57,
+                          "Type" : "ptcsvaluedisplay",
+                          "UseTheme" : true,
+                          "ValueFormat" : {
+                            "FormatString" : "0.00",
+                            "formatInfo" : {
+                              "StateFormats" : [ ]
+                            },
+                            "renderer" : "NUMBER",
+                            "roundingEnabled" : true,
+                            "showDependentField" : true
+                          },
+                          "ValueFormat_StateParameters" : [ ],
+                          "VerticalAlignment" : "center",
+                          "Visible" : true,
+                          "Width" : 60,
+                          "Z-index" : 10,
+                          "__TypeDisplayName" : "Value Display",
+                          "overflowShowLessTxt" : "[[showLess]]",
+                          "overflowShowMoreTxt" : "[[showMore]]"
+                        },
+                        "Widgets" : [ ]
+                      }, {
+                        "Properties" : {
+                          "Area" : "UI",
+                          "DataBaseType" : "NUMBER",
+                          "Disabled" : false,
+                          "DisclosureControl" : "disclosure",
+                          "DisplayName" : "ptcs-valuedisplay-12",
+                          "Height" : 60,
+                          "HorizontalAlignment" : "center",
+                          "Id" : "ptcsvaluedisplay-12",
+                          "ItemMeta" : {
+                            "type" : "text"
+                          },
+                          "Label" : "",
+                          "LabelAlignment" : "left",
+                          "LabelType" : "label",
+                          "LastContainer" : false,
+                          "Left" : 301,
+                          "ModalHeight" : 380,
+                          "ModalWidth" : 600,
+                          "MultiLine" : true,
+                          "ResponsiveLayout" : false,
+                          "ShowDataLoading" : false,
+                          "TabSequence" : 0,
+                          "TextIfNoValue" : "",
+                          "Top" : 56,
+                          "Type" : "ptcsvaluedisplay",
+                          "UseTheme" : true,
+                          "ValueFormat" : {
+                            "FormatString" : "0.00",
+                            "formatInfo" : {
+                              "StateFormats" : [ ]
+                            },
+                            "renderer" : "NUMBER",
+                            "roundingEnabled" : true,
+                            "showDependentField" : true
+                          },
+                          "ValueFormat_StateParameters" : [ ],
+                          "VerticalAlignment" : "center",
+                          "Visible" : true,
+                          "Width" : 60,
+                          "Z-index" : 10,
+                          "__TypeDisplayName" : "Value Display",
+                          "overflowShowLessTxt" : "[[showLess]]",
+                          "overflowShowMoreTxt" : "[[showMore]]"
+                        },
+                        "Widgets" : [ ]
+                      }, {
+                        "Properties" : {
+                          "Area" : "UI",
+                          "DataBaseType" : "NUMBER",
+                          "Disabled" : false,
+                          "DisclosureControl" : "disclosure",
+                          "DisplayName" : "ptcs-valuedisplay-13",
+                          "Height" : 60,
+                          "HorizontalAlignment" : "center",
+                          "Id" : "ptcsvaluedisplay-13",
+                          "ItemMeta" : {
+                            "type" : "text"
+                          },
+                          "Label" : "",
+                          "LabelAlignment" : "left",
+                          "LabelType" : "label",
+                          "LastContainer" : false,
+                          "Left" : 436.00006103515625,
+                          "ModalHeight" : 380,
+                          "ModalWidth" : 600,
+                          "MultiLine" : true,
+                          "ResponsiveLayout" : false,
+                          "ShowDataLoading" : false,
+                          "TabSequence" : 0,
+                          "TextIfNoValue" : "",
+                          "Top" : 57,
+                          "Type" : "ptcsvaluedisplay",
+                          "UseTheme" : true,
+                          "ValueFormat" : {
+                            "FormatString" : "0.00",
+                            "formatInfo" : {
+                              "StateFormats" : [ ]
+                            },
+                            "renderer" : "NUMBER",
+                            "roundingEnabled" : true,
+                            "showDependentField" : true
+                          },
+                          "ValueFormat_StateParameters" : [ ],
+                          "VerticalAlignment" : "center",
+                          "Visible" : true,
+                          "Width" : 60,
+                          "Z-index" : 10,
+                          "__TypeDisplayName" : "Value Display",
+                          "overflowShowLessTxt" : "[[showLess]]",
+                          "overflowShowMoreTxt" : "[[showMore]]"
+                        },
+                        "Widgets" : [ ]
+                      }, {
+                        "Properties" : {
+                          "Area" : "UI",
+                          "DisclosureControl" : "show-more",
+                          "DisplayName" : "ptcs-label-14",
+                          "Height" : 50,
+                          "HorizontalAlignment" : "center",
+                          "Id" : "ptcslabel-14",
+                          "LabelText" : "",
+                          "LabelType" : "label",
+                          "LastContainer" : false,
+                          "Left" : 41,
+                          "MultiLine" : true,
+                          "ResponsiveLayout" : false,
+                          "ShowDataLoading" : true,
+                          "TooltipField" : "Inactive",
+                          "Top" : 62,
+                          "Type" : "ptcslabel",
+                          "UseTheme" : true,
+                          "VerticalAlignment" : "center",
+                          "Visible" : true,
+                          "Width" : 50,
+                          "Z-index" : 10,
+                          "__TypeDisplayName" : "Label",
+                          "overflowShowLessTxt" : "[[showLess]]",
+                          "overflowShowMoreTxt" : "[[showMore]]"
+                        },
+                        "Widgets" : [ ]
+                      }, {
+                        "Properties" : {
+                          "Area" : "UI",
+                          "DisclosureControl" : "show-more",
+                          "DisplayName" : "ptcs-label-15",
+                          "Height" : 51,
+                          "HorizontalAlignment" : "center",
+                          "Id" : "ptcslabel-15",
+                          "LabelText" : "",
+                          "LabelType" : "label",
+                          "LastContainer" : false,
+                          "Left" : 40,
+                          "MultiLine" : true,
+                          "ResponsiveLayout" : false,
+                          "ShowDataLoading" : true,
+                          "TooltipField" : "Active",
+                          "Top" : 62,
+                          "Type" : "ptcslabel",
+                          "UseTheme" : true,
+                          "VerticalAlignment" : "center",
+                          "Visible" : true,
+                          "Width" : 51,
+                          "Z-index" : 10,
+                          "__TypeDisplayName" : "Label",
+                          "overflowShowLessTxt" : "[[showLess]]",
+                          "overflowShowMoreTxt" : "[[showMore]]"
+                        },
+                        "Widgets" : [ ]
+                      }, {
+                        "Properties" : {
+                          "Area" : "UI",
+                          "DisclosureControl" : "show-more",
+                          "DisplayName" : "ptcs-label-16",
+                          "Height" : 19,
+                          "HorizontalAlignment" : "left",
+                          "Id" : "ptcslabel-16",
+                          "LabelText" : "State",
+                          "LabelType" : "label",
+                          "LastContainer" : false,
+                          "Left" : 46,
+                          "MultiLine" : true,
+                          "ResponsiveLayout" : false,
+                          "ShowDataLoading" : true,
+                          "Top" : 26,
+                          "Type" : "ptcslabel",
+                          "UseTheme" : true,
+                          "VerticalAlignment" : "flex-start",
+                          "Visible" : true,
+                          "Z-index" : 10,
+                          "__TypeDisplayName" : "Label",
+                          "overflowShowLessTxt" : "[[showLess]]",
+                          "overflowShowMoreTxt" : "[[showMore]]"
+                        },
+                        "Widgets" : [ ]
+                      }, {
+                        "Properties" : {
+                          "Area" : "UI",
+                          "DisclosureControl" : "show-more",
+                          "DisplayName" : "ptcs-label-17",
+                          "Height" : 19,
+                          "HorizontalAlignment" : "left",
+                          "Id" : "ptcslabel-17",
+                          "LabelText" : "Actual Speed",
+                          "LabelType" : "label",
+                          "LastContainer" : false,
+                          "Left" : 290,
+                          "MultiLine" : true,
+                          "ResponsiveLayout" : false,
+                          "ShowDataLoading" : true,
+                          "Top" : 26,
+                          "Type" : "ptcslabel",
+                          "UseTheme" : true,
+                          "VerticalAlignment" : "flex-start",
+                          "Visible" : true,
+                          "Z-index" : 10,
+                          "__TypeDisplayName" : "Label",
+                          "overflowShowLessTxt" : "[[showLess]]",
+                          "overflowShowMoreTxt" : "[[showMore]]"
+                        },
+                        "Widgets" : [ ]
+                      } ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DisclosureControl" : "show-more",
+                        "DisplayName" : "ptcs-label-18",
+                        "Height" : 50,
+                        "HorizontalAlignment" : "center",
+                        "Id" : "ptcslabel-18",
+                        "LabelText" : "",
+                        "LabelType" : "label",
+                        "LastContainer" : false,
+                        "Left" : 111,
+                        "MultiLine" : true,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : true,
+                        "TooltipField" : "Inactive",
+                        "Top" : 65,
+                        "Type" : "ptcslabel",
+                        "UseTheme" : true,
+                        "VerticalAlignment" : "center",
+                        "Visible" : true,
+                        "Width" : 50,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Label",
+                        "overflowShowLessTxt" : "[[showLess]]",
+                        "overflowShowMoreTxt" : "[[showMore]]"
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DisclosureControl" : "show-more",
+                        "DisplayName" : "ptcs-label-19",
+                        "Height" : 50,
+                        "HorizontalAlignment" : "center",
+                        "Id" : "ptcslabel-19",
+                        "LabelText" : "",
+                        "LabelType" : "label",
+                        "LastContainer" : false,
+                        "Left" : 19,
+                        "MultiLine" : true,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : true,
+                        "TooltipField" : "Inactive",
+                        "Top" : 64,
+                        "Type" : "ptcslabel",
+                        "UseTheme" : true,
+                        "VerticalAlignment" : "center",
+                        "Visible" : true,
+                        "Width" : 50,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Label",
+                        "overflowShowLessTxt" : "[[showLess]]",
+                        "overflowShowMoreTxt" : "[[showMore]]"
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DisclosureControl" : "show-more",
+                        "DisplayName" : "ptcs-label-20",
+                        "Height" : 19,
+                        "HorizontalAlignment" : "left",
+                        "Id" : "ptcslabel-20",
+                        "LabelText" : "Webtear",
+                        "LabelType" : "label",
+                        "LastContainer" : false,
+                        "Left" : 105,
+                        "MultiLine" : true,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : true,
+                        "Top" : 30,
+                        "Type" : "ptcslabel",
+                        "UseTheme" : true,
+                        "VerticalAlignment" : "flex-start",
+                        "Visible" : true,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Label",
+                        "overflowShowLessTxt" : "[[showLess]]",
+                        "overflowShowMoreTxt" : "[[showMore]]"
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DisclosureControl" : "show-more",
+                        "DisplayName" : "ptcs-label-21",
+                        "Height" : 51,
+                        "HorizontalAlignment" : "center",
+                        "Id" : "ptcslabel-21",
+                        "LabelText" : "",
+                        "LabelType" : "label",
+                        "LastContainer" : false,
+                        "Left" : 18,
+                        "MultiLine" : true,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : true,
+                        "TooltipField" : "Active",
+                        "Top" : 63,
+                        "Type" : "ptcslabel",
+                        "UseTheme" : true,
+                        "VerticalAlignment" : "center",
+                        "Visible" : true,
+                        "Width" : 51,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Label",
+                        "overflowShowLessTxt" : "[[showLess]]",
+                        "overflowShowMoreTxt" : "[[showMore]]"
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DataBaseType" : "NUMBER",
+                        "Disabled" : false,
+                        "DisclosureControl" : "disclosure",
+                        "DisplayName" : "ptcs-valuedisplay-22",
+                        "Height" : 60,
+                        "HorizontalAlignment" : "center",
+                        "Id" : "ptcsvaluedisplay-22",
+                        "ItemMeta" : {
+                          "type" : "text"
+                        },
+                        "Label" : "",
+                        "LabelAlignment" : "left",
+                        "LabelType" : "label",
+                        "LastContainer" : false,
+                        "Left" : 217,
+                        "ModalHeight" : 380,
+                        "ModalWidth" : 600,
+                        "MultiLine" : true,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : false,
+                        "TabSequence" : 0,
+                        "TextIfNoValue" : "",
+                        "Top" : 60,
+                        "Type" : "ptcsvaluedisplay",
+                        "UseTheme" : true,
+                        "ValueFormat" : {
+                          "FormatString" : "0.00",
+                          "formatInfo" : {
+                            "StateFormats" : [ ]
+                          },
+                          "renderer" : "NUMBER",
+                          "roundingEnabled" : true,
+                          "showDependentField" : true
+                        },
+                        "ValueFormat_StateParameters" : [ ],
+                        "VerticalAlignment" : "center",
+                        "Visible" : true,
+                        "Width" : 60,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Value Display",
+                        "overflowShowLessTxt" : "[[showLess]]",
+                        "overflowShowMoreTxt" : "[[showMore]]"
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DataBaseType" : "NUMBER",
+                        "Disabled" : false,
+                        "DisclosureControl" : "disclosure",
+                        "DisplayName" : "ptcs-valuedisplay-23",
+                        "Height" : 60,
+                        "HorizontalAlignment" : "center",
+                        "Id" : "ptcsvaluedisplay-23",
+                        "ItemMeta" : {
+                          "type" : "text"
+                        },
+                        "Label" : "",
+                        "LabelAlignment" : "left",
+                        "LabelType" : "label",
+                        "LastContainer" : false,
+                        "Left" : 365,
+                        "ModalHeight" : 380,
+                        "ModalWidth" : 600,
+                        "MultiLine" : true,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : false,
+                        "TabSequence" : 0,
+                        "TextIfNoValue" : "",
+                        "Top" : 60,
+                        "Type" : "ptcsvaluedisplay",
+                        "UseTheme" : true,
+                        "ValueFormat" : {
+                          "FormatString" : "0.00",
+                          "formatInfo" : {
+                            "StateFormats" : [ ]
+                          },
+                          "renderer" : "NUMBER",
+                          "roundingEnabled" : true,
+                          "showDependentField" : true
+                        },
+                        "ValueFormat_StateParameters" : [ ],
+                        "VerticalAlignment" : "center",
+                        "Visible" : true,
+                        "Width" : 60,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Value Display",
+                        "overflowShowLessTxt" : "[[showLess]]",
+                        "overflowShowMoreTxt" : "[[showMore]]"
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DisclosureControl" : "show-more",
+                        "DisplayName" : "ptcs-label-24",
+                        "Height" : 25,
+                        "HorizontalAlignment" : "left",
+                        "Id" : "ptcslabel-24",
+                        "LabelText" : "Actual Dancer Position",
+                        "LabelType" : "label",
+                        "LastContainer" : false,
+                        "Left" : 391,
+                        "MultiLine" : true,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : true,
+                        "Top" : 150.9875030517578,
+                        "Type" : "ptcslabel",
+                        "UseTheme" : true,
+                        "VerticalAlignment" : "flex-start",
+                        "Visible" : true,
+                        "Width" : 160,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Label",
+                        "overflowShowLessTxt" : "[[showLess]]",
+                        "overflowShowMoreTxt" : "[[showMore]]"
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DisclosureControl" : "show-more",
+                        "DisplayName" : "ptcs-label-25",
+                        "Height" : 25,
+                        "HorizontalAlignment" : "left",
+                        "Id" : "ptcslabel-25",
+                        "LabelText" : "Actual SubstrateRoll Diameter",
+                        "LabelType" : "label",
+                        "LastContainer" : false,
+                        "Left" : 559.0000610351562,
+                        "MultiLine" : true,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : true,
+                        "Top" : 150.96250915527344,
+                        "Type" : "ptcslabel",
+                        "UseTheme" : true,
+                        "VerticalAlignment" : "flex-start",
+                        "Visible" : true,
+                        "Width" : 210,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Label",
+                        "overflowShowLessTxt" : "[[showLess]]",
+                        "overflowShowMoreTxt" : "[[showMore]]"
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DisclosureControl" : "show-more",
+                        "DisplayName" : "ptcs-label-26",
+                        "Height" : 19,
+                        "HorizontalAlignment" : "left",
+                        "Id" : "ptcslabel-26",
+                        "LabelText" : "Target Dancer Position",
+                        "LabelType" : "label",
+                        "LastContainer" : false,
+                        "Left" : 228,
+                        "MultiLine" : true,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : true,
+                        "Top" : 150.984375,
+                        "Type" : "ptcslabel",
+                        "UseTheme" : true,
+                        "VerticalAlignment" : "flex-start",
+                        "Visible" : true,
+                        "Width" : 156,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Label",
+                        "overflowShowLessTxt" : "[[showLess]]",
+                        "overflowShowMoreTxt" : "[[showMore]]"
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DataBaseType" : "NUMBER",
+                        "Disabled" : false,
+                        "DisclosureControl" : "disclosure",
+                        "DisplayName" : "ptcs-valuedisplay-27",
+                        "Height" : 60,
+                        "HorizontalAlignment" : "center",
+                        "Id" : "ptcsvaluedisplay-27",
+                        "ItemMeta" : {
+                          "type" : "text"
+                        },
+                        "Label" : "",
+                        "LabelAlignment" : "left",
+                        "LabelType" : "label",
+                        "LastContainer" : false,
+                        "Left" : 493.00006103515625,
+                        "ModalHeight" : 380,
+                        "ModalWidth" : 600,
+                        "MultiLine" : true,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : true,
+                        "TabSequence" : 0,
+                        "TextIfNoValue" : "",
+                        "Top" : 56,
+                        "Type" : "ptcsvaluedisplay",
+                        "UseTheme" : true,
+                        "ValueFormat" : {
+                          "FormatString" : "0.00",
+                          "formatInfo" : {
+                            "StateFormats" : [ ]
+                          },
+                          "renderer" : "NUMBER",
+                          "roundingEnabled" : false,
+                          "showDependentField" : true
+                        },
+                        "ValueFormat_StateParameters" : [ ],
+                        "VerticalAlignment" : "center",
+                        "Visible" : true,
+                        "Width" : 60,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Value Display",
+                        "overflowShowLessTxt" : "[[showLess]]",
+                        "overflowShowMoreTxt" : "[[showMore]]"
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DisclosureControl" : "show-more",
+                        "DisplayName" : "ptcs-label-28",
+                        "Height" : 25,
+                        "HorizontalAlignment" : "left",
+                        "Id" : "ptcslabel-28",
+                        "LabelText" : "Actual SubstrateRoll Length",
+                        "LabelType" : "label",
+                        "LastContainer" : false,
+                        "Left" : 772,
+                        "MultiLine" : true,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : true,
+                        "Top" : 150.953125,
+                        "Type" : "ptcslabel",
+                        "UseTheme" : true,
+                        "VerticalAlignment" : "flex-start",
+                        "Visible" : true,
+                        "Width" : 210,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Label",
+                        "overflowShowLessTxt" : "[[showLess]]",
+                        "overflowShowMoreTxt" : "[[showMore]]"
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DataBaseType" : "NUMBER",
+                        "Disabled" : false,
+                        "DisclosureControl" : "disclosure",
+                        "DisplayName" : "ptcs-valuedisplay-29",
+                        "HorizontalAlignment" : "left",
+                        "Id" : "ptcsvaluedisplay-29",
+                        "ItemMeta" : {
+                          "type" : "text"
+                        },
+                        "Label" : "",
+                        "LabelAlignment" : "left",
+                        "LabelType" : "label",
+                        "LastContainer" : false,
+                        "Left" : 239,
+                        "ModalHeight" : 380,
+                        "ModalWidth" : 600,
+                        "MultiLine" : true,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : false,
+                        "TabSequence" : 0,
+                        "TextIfNoValue" : "",
+                        "Top" : 190,
+                        "Type" : "ptcsvaluedisplay",
+                        "UseTheme" : true,
+                        "ValueFormat" : {
+                          "FormatString" : "0.00",
+                          "formatInfo" : {
+                            "StateFormats" : [ ]
+                          },
+                          "renderer" : "NUMBER",
+                          "roundingEnabled" : false,
+                          "showDependentField" : true
+                        },
+                        "ValueFormat_StateParameters" : [ ],
+                        "VerticalAlignment" : "flex-start",
+                        "Visible" : true,
+                        "Width" : 100,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Value Display",
+                        "overflowShowLessTxt" : "[[showLess]]",
+                        "overflowShowMoreTxt" : "[[showMore]]"
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DataBaseType" : "NUMBER",
+                        "Disabled" : false,
+                        "DisclosureControl" : "ellipsis",
+                        "DisplayName" : "ptcs-valuedisplay-30",
+                        "HorizontalAlignment" : "left",
+                        "Id" : "ptcsvaluedisplay-30",
+                        "ItemMeta" : {
+                          "type" : "text"
+                        },
+                        "Label" : "",
+                        "LabelAlignment" : "left",
+                        "LabelType" : "label",
+                        "LastContainer" : false,
+                        "Left" : 382,
+                        "ModalHeight" : 380,
+                        "ModalWidth" : 600,
+                        "MultiLine" : true,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : false,
+                        "TabSequence" : 0,
+                        "TextIfNoValue" : "",
+                        "Top" : 190,
+                        "Type" : "ptcsvaluedisplay",
+                        "UseTheme" : true,
+                        "ValueFormat" : {
+                          "FormatString" : "0.00",
+                          "formatInfo" : {
+                            "StateFormats" : [ ]
+                          },
+                          "renderer" : "NUMBER",
+                          "roundingEnabled" : false,
+                          "showDependentField" : true
+                        },
+                        "ValueFormat_StateParameters" : [ ],
+                        "VerticalAlignment" : "flex-start",
+                        "Visible" : true,
+                        "Width" : 100,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Value Display",
+                        "overflowShowLessTxt" : "[[showLess]]",
+                        "overflowShowMoreTxt" : "[[showMore]]"
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DataBaseType" : "NUMBER",
+                        "Disabled" : false,
+                        "DisclosureControl" : "ellipsis",
+                        "DisplayName" : "ptcs-valuedisplay-31",
+                        "HorizontalAlignment" : "left",
+                        "Id" : "ptcsvaluedisplay-31",
+                        "ItemMeta" : {
+                          "type" : "text"
+                        },
+                        "Label" : "",
+                        "LabelAlignment" : "left",
+                        "LabelType" : "label",
+                        "LastContainer" : false,
+                        "Left" : 578,
+                        "ModalHeight" : 380,
+                        "ModalWidth" : 600,
+                        "MultiLine" : true,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : false,
+                        "TabSequence" : 0,
+                        "TextIfNoValue" : "",
+                        "Top" : 190,
+                        "Type" : "ptcsvaluedisplay",
+                        "UseTheme" : true,
+                        "ValueFormat" : {
+                          "FormatString" : "0.00",
+                          "formatInfo" : {
+                            "StateFormats" : [ ]
+                          },
+                          "renderer" : "NUMBER",
+                          "roundingEnabled" : false,
+                          "showDependentField" : true
+                        },
+                        "ValueFormat_StateParameters" : [ ],
+                        "VerticalAlignment" : "flex-start",
+                        "Visible" : true,
+                        "Width" : 100,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Value Display",
+                        "overflowShowLessTxt" : "[[showLess]]",
+                        "overflowShowMoreTxt" : "[[showMore]]"
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DataBaseType" : "NUMBER",
+                        "Disabled" : false,
+                        "DisclosureControl" : "ellipsis",
+                        "DisplayName" : "ptcs-valuedisplay-32",
+                        "HorizontalAlignment" : "left",
+                        "Id" : "ptcsvaluedisplay-32",
+                        "ItemMeta" : {
+                          "type" : "text"
+                        },
+                        "Label" : "",
+                        "LabelAlignment" : "left",
+                        "LabelType" : "label",
+                        "LastContainer" : false,
+                        "Left" : 783,
+                        "ModalHeight" : 380,
+                        "ModalWidth" : 600,
+                        "MultiLine" : true,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : false,
+                        "TabSequence" : 0,
+                        "TextIfNoValue" : "",
+                        "Top" : 190,
+                        "Type" : "ptcsvaluedisplay",
+                        "UseTheme" : true,
+                        "ValueFormat" : {
+                          "FormatString" : "0.00",
+                          "formatInfo" : {
+                            "StateFormats" : [ ]
+                          },
+                          "renderer" : "NUMBER",
+                          "roundingEnabled" : false,
+                          "showDependentField" : true
+                        },
+                        "ValueFormat_StateParameters" : [ ],
+                        "VerticalAlignment" : "flex-start",
+                        "Visible" : true,
+                        "Width" : 100,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Value Display",
+                        "overflowShowLessTxt" : "[[showLess]]",
+                        "overflowShowMoreTxt" : "[[showMore]]"
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DisclosureControl" : "show-more",
+                        "DisplayName" : "ptcs-label-33",
+                        "Height" : 19,
+                        "HorizontalAlignment" : "left",
+                        "Id" : "ptcslabel-33",
+                        "LabelText" : "Max Diameter",
+                        "LabelType" : "label",
+                        "LastContainer" : false,
+                        "Left" : 1,
+                        "MultiLine" : true,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : true,
+                        "Top" : 151,
+                        "Type" : "ptcslabel",
+                        "UseTheme" : true,
+                        "VerticalAlignment" : "flex-start",
+                        "Visible" : true,
+                        "Width" : 96,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Label",
+                        "overflowShowLessTxt" : "[[showLess]]",
+                        "overflowShowMoreTxt" : "[[showMore]]"
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DisclosureControl" : "show-more",
+                        "DisplayName" : "ptcs-label-34",
+                        "Height" : 19,
+                        "HorizontalAlignment" : "left",
+                        "Id" : "ptcslabel-34",
+                        "LabelText" : "Min Diameter",
+                        "LabelType" : "label",
+                        "LastContainer" : false,
+                        "Left" : 104,
+                        "MultiLine" : true,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : true,
+                        "Top" : 151,
+                        "Type" : "ptcslabel",
+                        "UseTheme" : true,
+                        "VerticalAlignment" : "flex-start",
+                        "Visible" : true,
+                        "Width" : 96,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Label",
+                        "overflowShowLessTxt" : "[[showLess]]",
+                        "overflowShowMoreTxt" : "[[showMore]]"
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DisclosureControl" : "show-more",
+                        "DisplayName" : "ptcs-label-35",
+                        "Height" : 50,
+                        "HorizontalAlignment" : "center",
+                        "Id" : "ptcslabel-35",
+                        "LabelText" : "",
+                        "LabelType" : "label",
+                        "LastContainer" : false,
+                        "Left" : 19,
+                        "MultiLine" : true,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : true,
+                        "TooltipField" : "Inactive",
+                        "Top" : 183,
+                        "Type" : "ptcslabel",
+                        "UseTheme" : true,
+                        "VerticalAlignment" : "center",
+                        "Visible" : true,
+                        "Width" : 50,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Label",
+                        "overflowShowLessTxt" : "[[showLess]]",
+                        "overflowShowMoreTxt" : "[[showMore]]"
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DisclosureControl" : "show-more",
+                        "DisplayName" : "ptcs-label-36",
+                        "Height" : 50,
+                        "HorizontalAlignment" : "center",
+                        "Id" : "ptcslabel-36",
+                        "LabelText" : "",
+                        "LabelType" : "label",
+                        "LastContainer" : false,
+                        "Left" : 118,
+                        "MultiLine" : true,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : true,
+                        "TooltipField" : "Inactive",
+                        "Top" : 182,
+                        "Type" : "ptcslabel",
+                        "UseTheme" : true,
+                        "VerticalAlignment" : "center",
+                        "Visible" : true,
+                        "Width" : 50,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Label",
+                        "overflowShowLessTxt" : "[[showLess]]",
+                        "overflowShowMoreTxt" : "[[showMore]]"
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "ActiveStyle" : "DefaultButtonActiveStyle",
+                        "Area" : "UI",
+                        "AutoRefresh" : true,
+                        "AutoRefreshTabSequence" : 0,
+                        "DisplayName" : "autorefresh-39",
+                        "FocusStyle" : "DefaultButtonFocusStyle",
+                        "Height" : 28,
+                        "HoverStyle" : "DefaultButtonHoverStyle",
+                        "IconAlignment" : "left",
+                        "Id" : "autorefresh-39",
+                        "Label" : "Refresh Now",
+                        "LastContainer" : false,
+                        "Left" : 0,
+                        "RefreshInterval" : 1,
+                        "RefreshNowTabSequence" : 0,
+                        "RefreshToggleLabel" : "On",
+                        "RefreshToggleLabelOff" : "Off",
+                        "RefreshToggleSliderStyle" : "DefaultAutoRefreshToggleSliderStyle",
+                        "RefreshToggleStyle" : "DefaultAutoRefreshToggleStyle",
+                        "RefreshToggleStyleOff" : "DefaultAutoRefreshToggleOffStyle",
+                        "ResponsiveLayout" : false,
+                        "ShowControls" : true,
+                        "ShowDataLoading" : true,
+                        "Style" : "DefaultButtonStyle",
+                        "Top" : 463,
+                        "Type" : "autorefresh",
+                        "Visible" : false,
+                        "Width" : 180,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Auto Refresh"
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "Counter" : false,
+                        "Disabled" : false,
+                        "DisplayName" : "ptcs-textfield-40",
+                        "Id" : "ptcstextfield-40",
+                        "Label" : "",
+                        "LabelAlignment" : "left",
+                        "LastContainer" : false,
+                        "Left" : 0,
+                        "MaxNumberOfCharacters" : 100,
+                        "Password" : false,
+                        "ReadOnly" : false,
+                        "ResponsiveLayout" : false,
+                        "ShowClearText" : true,
+                        "ShowDataLoading" : true,
+                        "TabSequence" : 0,
+                        "Text" : "Palis.IIot.WebtensionControl_Unwinder",
+                        "TextAlignment" : "left",
+                        "Top" : 531,
+                        "Type" : "ptcstextfield",
+                        "UseTheme" : true,
+                        "Visible" : true,
+                        "Width" : 273,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Text Field"
+                      },
+                      "Widgets" : [ ]
+                    } ]
+                  } ]
+                } ]
+              },
+              "mashupType" : "mashupTemplate"
+            }
+            ]]>
+            </mashupContent>
+            <preview></preview>
+        </Mashup>
+    </Mashups>
+</Entities>
