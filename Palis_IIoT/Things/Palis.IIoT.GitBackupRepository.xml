@@ -12,7 +12,7 @@
          homeMashup=""
          identifier=""
          inheritedValueStream=""
-         name="Palis.IIoT.GitRepository"
+         name="Palis.IIoT.GitBackupRepository"
          projectName="Palis_IIoT"
          published="false"
          tags=""
@@ -21,12 +21,61 @@
             <avatar></avatar>
             <DesignTimePermissions>
                 <Create></Create>
-                <Read></Read>
-                <Update></Update>
-                <Delete></Delete>
+                <Read>
+                    <Principal
+                     isPermitted="true"
+                     name="sramar@padaluma.com"
+                     type="User"></Principal>
+                </Read>
+                <Update>
+                    <Principal
+                     isPermitted="true"
+                     name="sramar@padaluma.com"
+                     type="User"></Principal>
+                </Update>
+                <Delete>
+                    <Principal
+                     isPermitted="true"
+                     name="sramar@padaluma.com"
+                     type="User"></Principal>
+                </Delete>
                 <Metadata></Metadata>
             </DesignTimePermissions>
-            <RunTimePermissions></RunTimePermissions>
+            <RunTimePermissions>
+                <Permissions
+                 resourceName="*">
+                    <PropertyRead>
+                        <Principal
+                         isPermitted="true"
+                         name="PALIS.ComposerDeveloper_UG"
+                         type="Group"></Principal>
+                    </PropertyRead>
+                    <PropertyWrite>
+                        <Principal
+                         isPermitted="true"
+                         name="PALIS.ComposerDeveloper_UG"
+                         type="Group"></Principal>
+                    </PropertyWrite>
+                    <ServiceInvoke>
+                        <Principal
+                         isPermitted="true"
+                         name="PALIS.ComposerDeveloper_UG"
+                         type="Group"></Principal>
+                    </ServiceInvoke>
+                    <EventInvoke>
+                        <Principal
+                         isPermitted="true"
+                         name="PALIS.ComposerDeveloper_UG"
+                         type="Group"></Principal>
+                    </EventInvoke>
+                    <EventSubscribe>
+                        <Principal
+                         isPermitted="true"
+                         name="PALIS.ComposerDeveloper_UG"
+                         type="Group"></Principal>
+                    </EventSubscribe>
+                </Permissions>
+            </RunTimePermissions>
             <VisibilityPermissions>
                 <Visibility>
                     <Principal
@@ -137,12 +186,12 @@
                             </BranchName>
                             <CommitEmail>
                             <![CDATA[
-                            cloud@ramarson.com
+                            sramar@padaluma.com
                             ]]>
                             </CommitEmail>
                             <CommitName>
                             <![CDATA[
-                            ramarsonGIT
+                            sramar
                             ]]>
                             </CommitName>
                             <FileRepository>
@@ -152,7 +201,7 @@
                             </FileRepository>
                             <GitRepoURL>
                             <![CDATA[
-                            https://github.com/ramarsonGIT/ThingWorx
+                            https://palis-digital.visualstudio.com/Qbit.io/_git/PalisThingworx
                             ]]>
                             </GitRepoURL>
                             <LocalizationTokensPrefix>
@@ -175,7 +224,7 @@
                             <UseProxy>false</UseProxy>
                             <User>
                             <![CDATA[
-                            ramarsonGIT
+                            sramar
                             ]]>
                             </User>
                         </Row>

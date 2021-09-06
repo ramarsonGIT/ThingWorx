@@ -557,18 +557,18 @@
             <ImplementedShapes></ImplementedShapes>
             <ThingProperties>
                 <reportingLastEvaluation>
-                    <Value>2021-09-03T06:15:53.586Z</Value>
-                    <Timestamp>2021-09-03T06:15:53.586Z</Timestamp>
+                    <Value>2021-09-04T16:18:48.181Z</Value>
+                    <Timestamp>2021-09-04T16:18:48.181Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </reportingLastEvaluation>
                 <reportingLastChange>
-                    <Value>2021-09-03T06:15:53.586Z</Value>
-                    <Timestamp>2021-09-03T06:15:53.586Z</Timestamp>
+                    <Value>2021-09-04T16:18:48.181Z</Value>
+                    <Timestamp>2021-09-04T16:18:48.181Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </reportingLastChange>
                 <lastConnection>
-                    <Value>2021-09-03T06:15:53.585Z</Value>
-                    <Timestamp>2021-09-03T06:15:53.585Z</Timestamp>
+                    <Value>2021-09-04T16:18:48.181Z</Value>
+                    <Timestamp>2021-09-04T16:18:48.181Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </lastConnection>
                 <DriveState>
@@ -586,19 +586,19 @@
                     <Quality>UNKNOWN</Quality>
                 </DriveName>
                 <ActualPosition>
-                    <Value>276.4060974121094</Value>
-                    <Timestamp>2021-09-03T07:27:44.104Z</Timestamp>
-                    <Quality>GOOD</Quality>
+                    <Value>276.4059143066406</Value>
+                    <Timestamp>2021-09-04T04:16:36.496Z</Timestamp>
+                    <Quality>UNKNOWN</Quality>
                 </ActualPosition>
                 <ActualSpeed>
-                    <Value>0.0215000007301569</Value>
-                    <Timestamp>2021-09-03T07:27:48.612Z</Timestamp>
-                    <Quality>GOOD</Quality>
+                    <Value>-0.03579999879002571</Value>
+                    <Timestamp>2021-09-04T04:16:36.996Z</Timestamp>
+                    <Quality>UNKNOWN</Quality>
                 </ActualSpeed>
                 <ActualTorqueForce>
                     <Value>0.0</Value>
-                    <Timestamp>2021-09-03T07:27:38.098Z</Timestamp>
-                    <Quality>GOOD</Quality>
+                    <Timestamp>2021-09-04T04:16:21.966Z</Timestamp>
+                    <Quality>UNKNOWN</Quality>
                 </ActualTorqueForce>
                 <IndustrialThing>
                     <Value>
@@ -644,9 +644,9 @@
                     <Quality>UNKNOWN</Quality>
                 </WebSpeed>
                 <ActualDancerPosition>
-                    <Value>63.58914566040039</Value>
-                    <Timestamp>2021-09-03T07:27:48.612Z</Timestamp>
-                    <Quality>GOOD</Quality>
+                    <Value>63.64357376098633</Value>
+                    <Timestamp>2021-09-04T04:16:36.996Z</Timestamp>
+                    <Quality>BAD</Quality>
                 </ActualDancerPosition>
                 <MaximumRollDiamaterAchieved>
                     <Value>false</Value>

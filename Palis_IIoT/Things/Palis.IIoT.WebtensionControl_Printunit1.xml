@@ -473,18 +473,18 @@
             <ImplementedShapes></ImplementedShapes>
             <ThingProperties>
                 <reportingLastEvaluation>
-                    <Value>2021-09-03T07:36:53.882Z</Value>
-                    <Timestamp>2021-09-03T07:36:53.882Z</Timestamp>
+                    <Value>2021-09-04T16:18:48.182Z</Value>
+                    <Timestamp>2021-09-04T16:18:48.182Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </reportingLastEvaluation>
                 <reportingLastChange>
-                    <Value>2021-09-03T07:36:53.882Z</Value>
-                    <Timestamp>2021-09-03T07:36:53.882Z</Timestamp>
+                    <Value>2021-09-04T16:18:48.182Z</Value>
+                    <Timestamp>2021-09-04T16:18:48.182Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </reportingLastChange>
                 <lastConnection>
-                    <Value>2021-09-03T07:36:53.881Z</Value>
-                    <Timestamp>2021-09-03T07:36:53.881Z</Timestamp>
+                    <Value>2021-09-04T16:18:48.182Z</Value>
+                    <Timestamp>2021-09-04T16:18:48.182Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </lastConnection>
                 <DriveState>
@@ -502,19 +502,19 @@
                     <Quality>UNKNOWN</Quality>
                 </DriveName>
                 <ActualPosition>
-                    <Value>65.15740203857422</Value>
-                    <Timestamp>2021-09-03T08:23:26.498Z</Timestamp>
-                    <Quality>GOOD</Quality>
+                    <Value>65.29350280761719</Value>
+                    <Timestamp>2021-09-04T04:16:28.478Z</Timestamp>
+                    <Quality>UNKNOWN</Quality>
                 </ActualPosition>
                 <ActualSpeed>
-                    <Value>0.0013000000035390258</Value>
-                    <Timestamp>2021-09-03T08:23:27.500Z</Timestamp>
-                    <Quality>GOOD</Quality>
+                    <Value>-3.9999998989515007E-4</Value>
+                    <Timestamp>2021-09-04T04:16:36.996Z</Timestamp>
+                    <Quality>UNKNOWN</Quality>
                 </ActualSpeed>
                 <ActualTorqueForce>
-                    <Value>0.10000000149011612</Value>
-                    <Timestamp>2021-09-03T08:23:27.500Z</Timestamp>
-                    <Quality>GOOD</Quality>
+                    <Value>0.0</Value>
+                    <Timestamp>2021-09-04T04:16:35.494Z</Timestamp>
+                    <Quality>UNKNOWN</Quality>
                 </ActualTorqueForce>
                 <IndustrialThing>
                     <Value>
@@ -526,9 +526,9 @@
                     <Quality>GOOD</Quality>
                 </IndustrialThing>
                 <ActualWebtension>
-                    <Value>17.351688385009766</Value>
-                    <Timestamp>2021-09-03T08:23:28.638Z</Timestamp>
-                    <Quality>GOOD</Quality>
+                    <Value>39.753883361816406</Value>
+                    <Timestamp>2021-09-04T04:21:01.753Z</Timestamp>
+                    <Quality>UNKNOWN</Quality>
                 </ActualWebtension>
                 <TargetWebtension>
                     <Value>120.0</Value>
